@@ -1,5 +1,6 @@
 $('#stopButton').click(illuminateRed);
 $('#slowButton').click(illuminateYellow);
+$('#goButton').click(illuminateGreen);
 
 function illuminateRed() {
   clearLights();
@@ -8,7 +9,12 @@ function illuminateRed() {
 
 function illuminateYellow() {
   clearLights();
-  $('#slowLight').css("backgroundColor", "purple");
+  $('#slowLight').css("backgroundColor", "yellow");
+}
+
+function illuminateGreen() {
+  clearLights();
+  $('#goLight').css("backgroundColor", "green");
 }
 
 function clearLights() {
